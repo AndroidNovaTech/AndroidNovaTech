@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_scratch_card"
+        android:title="Scratch Cards"
+        android:icon="@drawable/ic_scratch_card" />
+    <item
+        android:id="@+id/nav_joke_category"
+        android:title="Joke Categories"
+        android:icon="@drawable/ic_joke" />
+</menu>

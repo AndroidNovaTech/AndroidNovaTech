@@ -1,0 +1,14 @@
+<resources>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dim">#6B6A6A</color>
+    <color name="light">#064D94</color>
+
+    <color name="background">#000000</color>  <!-- Pure Black -->
+    <color name="primary">#6200EE</color>  <!-- Dark Purple -->
+    <color name="secondary">#03DAC5</color>  <!-- Teal -->
+    <color name="textColor">#FFFFFF</color>  <!-- White -->
+    <color name="errorColor">#CF6679</color>  <!-- Red -->
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScratchView">
+        <attr name="overlay_image" format="reference" />
+        <attr name="overlay_width" format="dimension" />
+        <attr name="overlay_height" format="dimension" />
+        <attr name="tile_mode" format="string">
+            <enum name="CLAMP" value="0" />
+            <enum name="REPEAT" value="2" />
+            <enum name="MIRROR" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>

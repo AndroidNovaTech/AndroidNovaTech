@@ -1,0 +1,60 @@
+[versions]
+agp = "8.10.0"
+fragmentKtx = "1.8.6"
+glideVersion = "4.16.0"
+jetbrainsKotlinxCoroutinesPlayServices = "1.7.3"
+kotlin = "2.0.21"
+biometric = "1.1.0"
+glide = "4.16.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lifecycleViewmodelKtx = "2.9.0"
+lottie = "6.6.4"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+common = "18.11.0"
+
+dragview = "1.7.2"
+ads = "24.2.0"
+
+googleGmsGoogleServices = "4.4.2"
+
+cronetEmbedded = "119.6045.31"
+scratchview = "2.0.2"
+scratchviewVersion = "1.1.0"
+uiAndroid = "1.8.1"
+
+
+[libraries]
+androidx-biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glideVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-v4120 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+jetbrains-kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "jetbrainsKotlinxCoroutinesPlayServices" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-activity = { module = "androidx.activity:activity", version.ref = "activity" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+common = { module = "com.google.mlkit:common", version.ref = "common" }
+draglistview = { module = "com.github.woxthebox:draglistview", version.ref = "dragview" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "ads" }
+
+scratchview = { module = "com.github.AnupKumarPanwar:ScratchView", version.ref = "scratchview" }
+androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt={ id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin"}
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

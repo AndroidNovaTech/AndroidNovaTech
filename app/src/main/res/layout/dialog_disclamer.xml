@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">  <!-- Transparent background -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textViewTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. This app is for entertainment purpose only.\n2. No real money rewards are given.\n3. Do not share your personal details.\n4. Use at your own risk.\n5. We are not responsible for any loss.\n6. This app uses offline storage.\n7. Avoid using on rooted devices.\n8. All data is locally stored.\n9. Rewards are not transferable.\n10. We may change features anytime."
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkboxAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="I have read and agree to the terms" />
+
+            <Button
+                android:id="@+id/btnAgree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:enabled="false"
+                android:text="I have read and agree"
+                android:textColor="@android:color/white" />  <!-- Start me disabled -->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GiftCard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/errorColor</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">#E0D4D4</item>
+        <item name="android:textColor">@color/textColor</item>
+
+    </style>
+
+    <style name="Theme.GiftCard" parent="Base.Theme.GiftCard" />
+</resources>

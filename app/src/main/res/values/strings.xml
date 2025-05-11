@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GiftCard</string>
+    <string name="welcome_to_myapp">Welcome to MyApp</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="fingerprint_icon">Fingerprint Icon</string>
+    <string name="unlock">Unlock</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="lock_icon">Lock Icon</string>
+    <string name="enter_your_pin">Enter Your pin</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="enter_4_digit_pin">Enter 4-Digit PIN</string>
+    <string name="reset_pin">Reset Pin</string>
+    <string name="enter_security_answer">Enter Security Answer</string>
+    <string name="confirm_4_digit_pin">Confirm 4-digit PIN</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_new_pin">Enter new PIN</string>
+    <string name="security_question">Security Question</string>
+    <string name="check_username">Check Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="discalmer">1. This app is for entertainment purpose only.  \n 2. No real money rewards are given.\n 3. Do not share your personal details.\n 4. Use at your own risk.\n 5. We are not responsible for any loss.\n 6. This app uses offline storage.\n 7. Avoid using on rooted devices.\n 8. All data is locally stored.\n 9. Rewards are not transferable.\n 10. We may change features anytime.</string>
+    <string name="agree">I have read and agree</string>
+    <string name="login">Login</string>
+    <string name="log_in">Log in</string>
+    <string name="i_have_read_agree_to_the_terms">I have read agree to the terms</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

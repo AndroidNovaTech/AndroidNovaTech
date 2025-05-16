@@ -7,8 +7,10 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardElevation="8dp"
-        android:layout_margin="8dp">
+        app:strokeWidth="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
 
         <!-- ✅ Wrap children in FrameLayout inside CardView -->
         <FrameLayout
@@ -25,7 +27,7 @@
                 android:id="@+id/dialogScratchView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg3" />
+                />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/confettiView"
@@ -34,7 +36,7 @@
                 android:visibility="gone"
                 app:lottie_autoPlay="false"
                 app:lottie_loop="false"
-                app:lottie_fileName="confetti.json" />
+                app:lottie_fileName="confettiView.json" />
 
         </FrameLayout>
     </com.google.android.material.card.MaterialCardView>

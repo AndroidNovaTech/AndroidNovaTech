@@ -1,10 +1,10 @@
 package com.zain.giftcard.models
-
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
+import com.zain.giftcard.R
 
 class ScratchView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
 
@@ -20,7 +20,7 @@ class ScratchView(context: Context, attrs: AttributeSet?) : View(context, attrs)
         style = Paint.Style.STROKE
         strokeJoin = Paint.Join.ROUND
         strokeCap = Paint.Cap.ROUND
-        strokeWidth = 70f
+        strokeWidth = 100f
     }
 
     private var revealListener: ((Float) -> Unit)? = null
@@ -54,7 +54,11 @@ class ScratchView(context: Context, attrs: AttributeSet?) : View(context, attrs)
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         scratchBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
         scratchCanvas = Canvas(scratchBitmap!!)
-        scratchCanvas?.drawColor(Color.GRAY)
+//        scratchCanvas?.drawColor(Color.GRAY)
+
+        val overlayImage = BitmapFactory.decodeResource(resources, R.drawable.bg4)
+        val scaleOverlay = Bitmap.createScaledBitmap(overlayImage, w, h, false)
+        scratchCanvas?.drawBitmap(scaleOverlay, 0f, 0f, null)
     }
 
     override fun onDraw(canvas: Canvas) {

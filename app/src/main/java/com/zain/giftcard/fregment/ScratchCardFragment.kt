@@ -1,8 +1,6 @@
 package com.zain.giftcard.fregment
 
 import android.Manifest
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.app.Dialog
 import android.os.Bundle
 import android.os.VibrationEffect
@@ -10,9 +8,9 @@ import android.os.Vibrator
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.ImageView
 import androidx.annotation.RequiresPermission
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -47,11 +45,22 @@ class ScratchCardFragment : Fragment() {
 
     private fun showScratchDialog(card: ScratchCardModel) {
         val dialogView = layoutInflater.inflate(R.layout.dialog_scratch, null)
-        val dialog = Dialog(requireContext(), android.R.style.Theme_Black_NoTitleBar_Fullscreen)
+        val dialog = Dialog(requireContext())
         dialog.setContentView(dialogView)
+        val params = dialog.window?.attributes
+        params?.width = 800
+        params?.height = 1000
+        dialog.window?.attributes = params
+
+        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        dialog.window?.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+        dialog.window?.setDimAmount(0.8f)
+        dialog.window?.attributes?.windowAnimations = R.style.Dialog_Animation
 
         val rewardImage = dialogView.findViewById<ImageView>(R.id.dialogCardImage)
         val scratchView = dialogView.findViewById<ScratchView>(R.id.dialogScratchView)
+
+
 
         // कार्ड का डेटा लोड करें
         rewardImage.setImageResource(card.imageRes)
